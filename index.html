@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="card">
+            <h1>
+                Password Generator
+            </h1>
+        </div>
+        <div class="card header">
+            <h2>
+                Select Options:
+            </h2>
+        </div>
+        <div class="card option">
+            <span>Lowercase Letters</span>
+            <input type="checkbox" id="lower">
+        </div>
+        <div class="card option">
+            <span>Uppercase Letters</span>
+            <input type="checkbox" id="upper">
+        </div>
+        <div class="card option">
+            <span>Numbers</span>
+            <input type="checkbox" id="numbers">
+        </div>
+        <div class="card option">
+            <span>Symbols</span>
+            <input type="checkbox" id="symbols">
+        </div>
+        <div class="card length-entry">
+            <input type="text" id="length" placeholder="Desired Password Length">
+            <span class="textbox-label">Min 8, Max 128</span>
+        </div>
+        <div class="card button" onclick="passGen()">
+            Generate Password
+        </div>
+        <div class="card hidden" id="outCard">
+            <p id="pass"></p>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>
